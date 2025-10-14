@@ -34,3 +34,8 @@ top: 54.5%;
 right: 27%;
 font-size: clamp(8px,5vw,24px);
 }
+
+.pokemon_name {
+    color: rgb(204,23,23);
+    text-transform: capitalize;
+}
