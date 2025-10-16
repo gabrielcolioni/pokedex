@@ -39,3 +39,16 @@ font-size: clamp(8px,5vw,24px);
     color: rgb(204,23,23);
     text-transform: capitalize;
 }
+.form {
+    position:absolute;
+    width: 65%;
+    top: 65%;
+    left: 13.5%;
+}
+
+.input_search {
+    width: 100%;
+    padding: 4%;
+    outline: none;
+    
+}
