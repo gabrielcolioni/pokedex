@@ -15,11 +15,11 @@ position: relative;
 margin-top: 2%;
 padding: 15px;
 }
-.Pokedex{
+.pokedex{
     width: 100%;
     max-width: 425px;
 }
-.Pokemon_img{
+.pokemon_img{
     position: absolute;
     bottom: 55%;
     left: 50%;
@@ -56,4 +56,25 @@ font-size: clamp(8px,5vw,24px);
     color: blueviolet;
     font-size: clamp(8px,5vw,24px);
     box-shadow: -3px 4px 0 #888;
+}
+.buttons{
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    width: 65%;
+    transform: translate(-57%,0);
+    display: flex;
+    gap: 20px;
+}
+.button{
+    width: 50%;
+    padding: 5%;
+    border: 2px solid black;
+    border-radius: 25px;
+    font-size: clamp(8px,5vw,24px);
+    box-shadow: -3px 4px o #888;
+}
+button:active{
+    box-shadow: inset -4px 4px 0 #888;
+    font-size: 0.9;
 }

@@ -18,3 +18,33 @@ const fetchpoken= async (pokemon)=> {
 
     }
 }
+const renderPokemon = asyns(pokemon)=> {
+    const data = await fetchpokemon(pokemon);
+    if(data){
+        pokemon_name.innerHTML=data.name;
+        pokemon_number.innerHTML= data.id;
+        pokemon_img.src= data['sprites']['version']['generation-v']['black']
+    }
+
+}
+
+pokemon_form.addEventListener("submit", (event)=>{
+    event.preventDefault();
+    console.log("Enviando Formulario",pokemon_input.value);
+    renderPokemon(pokemon_input.value.toLowercase());
+    InputDeviceInfo.value ="";
+
+})
+
+pokemon_prev.addEventListener("click",()=>{
+    if(searchPokemon > 1){
+        searchPokemon -=1
+        renderPokemon(searchPokemon)
+    }
+
+})
+
+pokemon_next.addEventListener("click",()=>{
+    searchPokemon +=1
+     renderPokemon
+})
